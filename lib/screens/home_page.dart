@@ -43,10 +43,10 @@ class _SpeechPageState extends State<SpeechPage> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: AvatarGlow(
+        glowShape: BoxShape.circle,
         animate: true,
         glowColor: Theme.of(context).primaryColor,
-
-        duration: const Duration(microseconds: 100),
+        duration: const Duration(seconds: 1),
         repeat: true,
         child: FloatingActionButton(
           onPressed: _listen,
